@@ -1,3 +1,5 @@
+"use client";
+
 import { ChevronUp } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -7,7 +9,11 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white underline-link">
       <div className="w-full">
-        <Button variant="ghost" className="bg-gray-800 w-full rounded-none">
+        <Button
+          variant="ghost"
+          className="bg-gray-800 w-full rounded-none"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
           <ChevronUp className="nr-2 h-4 w-4" />
           Back to top
         </Button>

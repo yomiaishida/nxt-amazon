@@ -23,6 +23,7 @@ export default function Header() {
                 width={40}
                 height={40}
               />
+              {APP_NAME}
             </Link>
           </div>
           <div className="hidden md:block flex-1 max-w-xl">
